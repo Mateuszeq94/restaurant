@@ -1,10 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 export const Nav = () => {
-  return (
+  const [navigation, setNavigation] = useState(false);
+  const handleNavClick = () => setNavigation(!navigation);
+  return !navigation ? (
+    <div className="navBtn" onClick={handleNavClick}>
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+  ) : (
     <nav className="nav">
-      <ul>
+      <ul onClick={handleNavClick}>
         <li className="navList">
           <Link to="/">Home</Link>
         </li>

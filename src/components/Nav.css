@@ -1,0 +1,31 @@
+.nav,
+.navBtn {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #333;
+
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navList,
+.navBtn {
+    padding: 10px;
+    border: 1px solid #9e801f;
+}
+
+.navBtn {
+    display: block;
+}
+
+.navList a,
+.navBtn {
+    display: block;
+    color: #9e801f;
+    text-decoration: none;
+}
